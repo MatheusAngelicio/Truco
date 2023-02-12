@@ -113,7 +113,9 @@ class _HomePageState extends State<HomePage> {
   Widget _buildRoundedButton(
       {required String text, double size = 52.0, required Color color, required Function onTap}) {
     return GestureDetector(
-      onTap: onTap(),
+      onTap: () {
+        onTap();
+      },
       child: ClipOval(
         child: Container(
           color: color,
