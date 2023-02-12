@@ -141,7 +141,9 @@ class _HomePageState extends State<HomePage> {
           color: Colors.black.withOpacity(0.1),
           onTap: () {
             setState(() {
-              player.score--;
+              if(player.score > 0){
+                player.score--;
+              }
             });
           },
         ),
