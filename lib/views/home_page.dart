@@ -181,6 +181,7 @@ class _HomePageState extends State<HomePage> {
   void _showDialog(
       {required String title, required String message, required Function confirm, required Function cancel}) {
     showDialog(
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
